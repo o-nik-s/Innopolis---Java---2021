@@ -1,0 +1,65 @@
+// class version 52.0 (52)
+// access flags 0x21
+// signature <T:Ljava/lang/Object;>Ljava/lang/Object;
+// declaration: CoverByGenerics<T>
+public class CoverByGenerics {
+
+  // compiled from: CoverByGenerics.java
+
+  // access flags 0x2
+  // signature TT;
+  // declaration: phone extends T
+  private Ljava/lang/Object; phone
+
+  // access flags 0x1
+  public <init>()V
+   L0
+    LINENUMBER 8 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    RETURN
+   L1
+    LOCALVARIABLE this LCoverByGenerics; L0 L1 0
+    // signature LCoverByGenerics<TT;>;
+    // declaration: this extends CoverByGenerics<T>
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  // signature ()TT;
+  // declaration: T getPhone()
+  public getPhone()Ljava/lang/Object;
+   L0
+    LINENUMBER 12 L0
+    ALOAD 0
+    GETFIELD CoverByGenerics.phone : Ljava/lang/Object;
+    ARETURN
+   L1
+    LOCALVARIABLE this LCoverByGenerics; L0 L1 0
+    // signature LCoverByGenerics<TT;>;
+    // declaration: this extends CoverByGenerics<T>
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  // signature (TT;)V
+  // declaration: void setPhone(T)
+  public setPhone(Ljava/lang/Object;)V
+   L0
+    LINENUMBER 16 L0
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD CoverByGenerics.phone : Ljava/lang/Object;
+   L1
+    LINENUMBER 17 L1
+    RETURN
+   L2
+    LOCALVARIABLE this LCoverByGenerics; L0 L2 0
+    // signature LCoverByGenerics<TT;>;
+    // declaration: this extends CoverByGenerics<T>
+    LOCALVARIABLE phone Ljava/lang/Object; L0 L2 1
+    // signature TT;
+    // declaration: phone extends T
+    MAXSTACK = 2
+    MAXLOCALS = 2
+}
