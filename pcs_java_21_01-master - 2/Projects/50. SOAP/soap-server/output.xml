@@ -1,0 +1,15 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <ns2:getUsersResponse xmlns:ns2="http://my.com/service">
+            <ns2:users>
+                <ns2:firstName>User 1</ns2:firstName>
+                <ns2:lastName>User 1</ns2:lastName>
+            </ns2:users>
+            <ns2:users>
+                <ns2:firstName>User 2</ns2:firstName>
+                <ns2:lastName>User 2</ns2:lastName>
+            </ns2:users>
+        </ns2:getUsersResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

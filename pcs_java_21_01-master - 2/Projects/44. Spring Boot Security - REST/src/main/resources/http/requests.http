@@ -1,0 +1,38 @@
+GET localhost/api/students?page=0&size=2
+Authorization: Bearer d469a780-3e2a-438e-8cd8-4d364c580213
+
+###
+
+GET localhost/api/students/777
+Authorization: Bearer d469a780-3e2a-438e-8cd8-4d364c580213
+
+### ADMIN
+
+POST localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "sidikov.marsel@gmail.com",
+  "password": "qwerty007!"
+}
+
+### USER
+
+POST localhost/api/login
+Content-Type: application/json
+
+{
+  "email": "user1@mail.com",
+  "password": "qwerty007!"
+}
+
+###
+
+POST localhost/api/students
+Content-Type: application/json
+Authorization: Bearer 733db98e-d0eb-4ae6-a877-0a9214a8f4ef
+
+{
+  "firstName" : "u1",
+  "lastName" : "u1"
+}

@@ -1,0 +1,109 @@
+// class version 52.0 (52)
+// access flags 0x21
+// signature <T:Ljava/lang/Object;>Ljava/lang/Object;
+// declaration: Nullable<T>
+public class Nullable {
+
+  // compiled from: Nullable.java
+
+  // access flags 0x2
+  // signature TT;
+  // declaration: value extends T
+  private Ljava/lang/Object; value
+
+  // access flags 0x2
+  // signature (TT;)V
+  // declaration: void <init>(T)
+  private <init>(Ljava/lang/Object;)V
+   L0
+    LINENUMBER 11 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+   L1
+    LINENUMBER 12 L1
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD Nullable.value : Ljava/lang/Object;
+   L2
+    LINENUMBER 13 L2
+    RETURN
+   L3
+    LOCALVARIABLE this LNullable; L0 L3 0
+    // signature LNullable<TT;>;
+    // declaration: this extends Nullable<T>
+    LOCALVARIABLE value Ljava/lang/Object; L0 L3 1
+    // signature TT;
+    // declaration: value extends T
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x9
+  // signature <E:Ljava/lang/Object;>(TE;)LNullable<TE;>;
+  // declaration: Nullable<E> of<E>(E)
+  public static of(Ljava/lang/Object;)LNullable;
+   L0
+    LINENUMBER 19 L0
+    NEW Nullable
+    DUP
+    ALOAD 0
+    INVOKESPECIAL Nullable.<init> (Ljava/lang/Object;)V
+    ARETURN
+   L1
+    LOCALVARIABLE value Ljava/lang/Object; L0 L1 0
+    // signature TE;
+    // declaration: value extends E
+    MAXSTACK = 3
+    MAXLOCALS = 1
+
+  // access flags 0x9
+  // signature <T:Ljava/lang/Object;>()LNullable<TT;>;
+  // declaration: Nullable<T> empty<T>()
+  public static empty()LNullable;
+   L0
+    LINENUMBER 23 L0
+    NEW Nullable
+    DUP
+    ACONST_NULL
+    INVOKESPECIAL Nullable.<init> (Ljava/lang/Object;)V
+    ARETURN
+    MAXSTACK = 3
+    MAXLOCALS = 0
+
+  // access flags 0x1
+  public isPresent()Z
+   L0
+    LINENUMBER 27 L0
+    ALOAD 0
+    GETFIELD Nullable.value : Ljava/lang/Object;
+    IFNULL L1
+    ICONST_1
+    GOTO L2
+   L1
+   FRAME SAME
+    ICONST_0
+   L2
+   FRAME SAME1 I
+    IRETURN
+   L3
+    LOCALVARIABLE this LNullable; L0 L3 0
+    // signature LNullable<TT;>;
+    // declaration: this extends Nullable<T>
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  // signature ()TT;
+  // declaration: T get()
+  public get()Ljava/lang/Object;
+   L0
+    LINENUMBER 31 L0
+    ALOAD 0
+    GETFIELD Nullable.value : Ljava/lang/Object;
+    ARETURN
+   L1
+    LOCALVARIABLE this LNullable; L0 L1 0
+    // signature LNullable<TT;>;
+    // declaration: this extends Nullable<T>
+    MAXSTACK = 1
+    MAXLOCALS = 1
+}

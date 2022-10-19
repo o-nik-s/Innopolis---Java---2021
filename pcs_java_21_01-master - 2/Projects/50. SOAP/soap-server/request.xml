@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://my.com/service">
+    <soapenv:Body>
+        <gs:getUsersRequest>
+            <gs:limit>2</gs:limit>
+        </gs:getUsersRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

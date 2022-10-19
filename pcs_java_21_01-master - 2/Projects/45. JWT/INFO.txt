@@ -1,0 +1,13 @@
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9 -> header
+.
+eyJzdWIiOiIxMCIsInJvbGUiOiJBRE1JTiIsInN0YXRlIjoiQ09ORklSTUVEIiwiZW1haWwiOiJzaWRpa292Lm1hcnNlbEBnbWFpbCJ9 -> payload
+.
+ZQqssH-WTrgkP8IYIQVaETCu-tnqfQVqkUCWp6YCudg -> verify signature
+
+Какой принцип получения сигнатуры верификации?
+
+hmac256(base64(header) + "." + base64(payload), "secret_key_34231") -> token
+
+login/password -> server -> access token (на день), refresh token (на год)
+
+Когда клиент понимает, что его токен просрочен, он отправляет запрос с refresh_token и получает новую пару access/refresh

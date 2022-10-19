@@ -1,0 +1,87 @@
+// class version 52.0 (52)
+// access flags 0x21
+public class NullableObject {
+
+  // compiled from: NullableObject.java
+
+  // access flags 0x2
+  private Ljava/lang/Object; value
+
+  // access flags 0x2
+  private <init>(Ljava/lang/Object;)V
+   L0
+    LINENUMBER 11 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+   L1
+    LINENUMBER 12 L1
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD NullableObject.value : Ljava/lang/Object;
+   L2
+    LINENUMBER 13 L2
+    RETURN
+   L3
+    LOCALVARIABLE this LNullableObject; L0 L3 0
+    LOCALVARIABLE value Ljava/lang/Object; L0 L3 1
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x9
+  public static of(Ljava/lang/Object;)LNullableObject;
+   L0
+    LINENUMBER 16 L0
+    NEW NullableObject
+    DUP
+    ALOAD 0
+    INVOKESPECIAL NullableObject.<init> (Ljava/lang/Object;)V
+    ARETURN
+   L1
+    LOCALVARIABLE value Ljava/lang/Object; L0 L1 0
+    MAXSTACK = 3
+    MAXLOCALS = 1
+
+  // access flags 0x9
+  public static empty()LNullableObject;
+   L0
+    LINENUMBER 20 L0
+    NEW NullableObject
+    DUP
+    ACONST_NULL
+    INVOKESPECIAL NullableObject.<init> (Ljava/lang/Object;)V
+    ARETURN
+    MAXSTACK = 3
+    MAXLOCALS = 0
+
+  // access flags 0x1
+  public isPresent()Z
+   L0
+    LINENUMBER 24 L0
+    ALOAD 0
+    GETFIELD NullableObject.value : Ljava/lang/Object;
+    IFNULL L1
+    ICONST_1
+    GOTO L2
+   L1
+   FRAME SAME
+    ICONST_0
+   L2
+   FRAME SAME1 I
+    IRETURN
+   L3
+    LOCALVARIABLE this LNullableObject; L0 L3 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public get()Ljava/lang/Object;
+   L0
+    LINENUMBER 28 L0
+    ALOAD 0
+    GETFIELD NullableObject.value : Ljava/lang/Object;
+    ARETURN
+   L1
+    LOCALVARIABLE this LNullableObject; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+}

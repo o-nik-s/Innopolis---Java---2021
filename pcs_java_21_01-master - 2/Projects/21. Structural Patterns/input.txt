@@ -1,0 +1,23 @@
+IntelliJ IDEA Edu enables students to learn the most popular languages such as Java, Kotlin, and Scala through the interactive step-by-step process. IntelliJ IDEA Edu also empowers teachers with tools that help them easily create and manage the educational process.
+If you want, you can watch the related video before you continue to learn about IntelliJ IDEA Edu.
+You can download IntelliJ IDEA Edu to start working with the tools right away. If you need further instructions, refer to the installation guide.
+If you have the IntelliJ IDEA Ultimate or Community version already installed on your machine, you can just install the EduTools plugin.
+Install the EduTools plugin
+In the Settings/Preferences dialog Ctrl+Alt+S, go to Plugins.
+On the Plugins page, click the Marketplace tab.
+In the search field enter EduTools. IntelliJ IDEA displays the found plugin.
+Settings/Preferences Plugins page
+Click Install and then Restart IDE.
+IntelliJ IDEA completes the installation and restarts the IDE.
+Roles
+IntelliJ IDEA Edu offers two roles you can choose from: the learner and the educator.
+Learner
+Educator
+The learning process takes place inside the IDE, and learners can get familiar with tools that they will use on the real-life programs.
+As a learner you can do the following:
+Browse and join a public interactive programming course, or a custom course created by your teacher.
+View your private courses and synchronize your progress between different computers by logging in to a learning platform such as Stepik.
+Work on assignments that are distributed locally by your teacher.
+Start learning by filling in placeholders in the exercise code according to the task description.
+Verify tasks, get instant feedback and quick results using an intelligent development tool.
+For more details, refer to the Learner Start Guide.
